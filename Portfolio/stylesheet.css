@@ -9,9 +9,11 @@ body{
 }
 
 .container header{
-    width: inherit;
-    height: 60px;
+    width: 100%;
+    height: 40px;
     display: flex;
+    flex-direction: row;
+    position: fixed;
     background-color: rgb(224, 221, 221);
     font-size: 24px;
     font-weight: bold;
@@ -19,26 +21,61 @@ body{
     font-family: "Times New Roman", "Arial";
     justify-content: space-around;
     align-content: center;
+    padding: 10px;
 }
 
 .header .logo_name {
+    height: inherit;
+    display: flex;
     text-align: left;
-    flex-basis: 50%;
+    align-items: center;
+    justify-content: space-between;
     text-indent: 10%;
-    padding-top: 16px;
+    padding: 0 0 0 5%;
+}
+
+.header .empty_space {
+    flex: 1 1 0%;
+    place-self: stretch;
+}
+
+.container .header .navbars{
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    background-color: rgb(224, 221, 221);
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(143, 2, 2);
+    font-family: "Times New Roman", "Arial";
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 5%;
+}
+
+.container .header_space{
+    height: 40px;
+    padding: 10px;
 }
 
 .header .About_anchor_key {
-    padding-top: 16px;
+    padding: 0 10px;
 }
 
 .header .Projects_anchor_key {
-    padding-top: 16px;
+    padding: 0 10px;
+}
+
+.header .Skills_anchor_key {
+    padding: 0 10px;
 }
 
 .header .Contact_anchor_key {
-    padding-top: 16px;
+    padding: 0 10px;
 }
+
 
 .container .section{
     width: inherit;
@@ -78,4 +115,19 @@ body{
 .profile_heading .role{
     color: #2107fd;
 
+}
+
+.container .sections .about{
+    width: inherit;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(224, 221, 221);
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(143, 2, 2);
+    font-family: "Times New Roman", "Arial";
+    justify-content: space-around;
+    align-content: center;
+    padding: 10px;
 }
