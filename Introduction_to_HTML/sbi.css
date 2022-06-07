@@ -1,0 +1,91 @@
+*{
+    margin :0px;
+}
+body{
+    width : 100%;
+    height: auto;
+    background-image: url(background.jpg);
+}
+
+.container{
+    width: 85%;
+    height: 1000px;
+    margin: 0% 7.5%;
+    background-color: red;
+    margin-bottom: 20px;
+}
+
+.logo{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
+.menu{
+    width: 100%;
+    height: 30px;
+    background-color: white;
+}
+
+.info{
+    width: 100%;
+    height: 60px;
+}
+
+.sub_container{
+    width: 100%;
+    height: 275px;
+}
+.personal{
+    width: 50%;
+    height: 275px;
+    background-color: green;
+    float: left;
+}
+
+.corporate{
+    width: 50%;
+    height: 275px;
+    background-color: yellow;
+    float: right;
+}
+
+.news{
+    width: 100%;
+    height: 30px;
+    background-color: chartreuse;
+}
+
+.navbars{
+    width: 100%;
+    height: 240px;
+    background-color: orange;
+}
+
+.ads{
+    width: 100%;
+    height: 260px;
+    background-color: aqua;
+}
+
+.circulars{
+    width: 100%;
+    height: 30px;
+    background-color: crimson;
+}
+
+.anchor_logo{
+    height: inherit;
+}
+
+.img_left_logo{
+    float: left;
+    height: inherit;
+}
+.img_right_logo{
+    float: right;
+    height: inherit;
+}
+
+.menu ui{list-style-type: none}
+.menu li{}

@@ -43,7 +43,7 @@ body{
     height: inherit;
     display: flex;
     flex-direction: row;
-    position: relative;
+  /*  position: relative; */
     background-color: rgb(224, 221, 221);
     font-size: 24px;
     font-weight: bold;
@@ -121,13 +121,54 @@ body{
     width: inherit;
     height: 450px;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color: rgb(224, 221, 221);
     font-size: 24px;
     font-weight: bold;
-    color: rgb(143, 2, 2);
+    color: black;
+    font-family: "Times New Roman", "Arial";
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+
+.about .about_header{
+    padding: 10px 10px;
+}
+
+.about .about_experience_info_blocks{
+    width: inherit;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(224, 221, 221);
+    font-size: 24px;
+    font-weight: lighter;
+    color: black;
     font-family: "Times New Roman", "Arial";
     justify-content: space-around;
     align-content: center;
     padding: 10px;
+}
+
+.about .about_experience_info_blocks .about_info{
+    text-align: left;
+    color: black;
+    font-size: 24px;
+    flex-basis: 50%;
+    padding: 2% ;
+}
+
+.about .about_experience_info_blocks .experience_info{
+    text-align: left;
+    color: black;
+    font-size: 24px;
+    flex-basis: 50%;
+    padding: 2% ;
+}
+
+.about .about_header .about_header_span{
+    color: rgb(243 6 6);
 }
