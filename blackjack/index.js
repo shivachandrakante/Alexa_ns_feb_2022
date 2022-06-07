@@ -10,6 +10,14 @@ let messageEl = document.getElementById("message-el");
 let sumEl = document.querySelector("#sum-el");
 let cardEl = document.getElementById("card-el");
 
+let player = {
+    name: "Per",
+    chips: 200
+}
+
+let playerEl = document.getElementById("player-el");
+playerEl.textContent = player.name + ": $" + player.chips;
+
 function getRandomCard(){
     return Math.floor(Math.random()*11)+1;
 }
