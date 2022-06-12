@@ -244,7 +244,6 @@ span{
     justify-content: space-between;
     align-content: center;
     align-items: center;
-    margin-top: 50px;
 }
 
 .skills .skillsHeading{
@@ -288,4 +287,137 @@ span{
     width: 100%;
     height: 50%;
     border-radius: 5%;
+}
+
+
+.container .sections .contact{
+    width: inherit;
+    height: auto;
+    background-color:  rgb(224, 221, 221);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    /* box-sizing: border-box; */
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+}
+
+.contact .contactHeading{
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 0px;
+}
+
+.contact .contactContent{
+    width: inherit;
+    height: 500px;
+    display: flex;
+    flex-direction: row;
+    padding: 2% 20px;
+}
+
+.contactContent .contentInformation{
+    color: black;
+    font-size: 25px;
+    flex-basis: 60%;
+    text-indent: 10%;
+}
+.contactContent img{
+    max-width: 100%;
+    height: 500px;
+}
+
+.contactLogos{
+    width: auto;
+    height: auto;
+    display: flex;
+    font-size: 16px;
+    padding: 5px 10%;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.contactLogos img{
+    width: 25px;
+    height: inherit;
+}
+
+.contactLogos p{
+    display: inline;
+}
+
+.contactLogo_1{
+    width: 150px;
+    background-color: #0e76a8;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 5px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.contactLogo_2{
+    width: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 5px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.contactLogo_3{
+    width: 150px;
+    background-color: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    border-radius: 5%;
+    padding: 5px;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+}
+
+.contactForm form{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    padding: 15px;
+}
+.contactForm form input{
+    width: 60%;
+    height: 30px;
+    margin: 10px;
+    font-size: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: none;
+}
+
+#contactFormMessage{
+    height: 100px;
+}
+
+.contactForm form button{
+    color: white;
+    font-size: 20px;
+    background-color: rgb(243 6 6);
+    width: 60%;
+    height: 40px;
+    margin: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 2%;
+    border-radius: 5px;
+    border: none;
 }
