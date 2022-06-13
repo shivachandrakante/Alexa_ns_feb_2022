@@ -1,21 +1,41 @@
 html {
     scroll-behavior: smooth;
-  }
+}
+/*
+    Body css 
+        fixing width size manually;
+        Setting entire font family to Verdana.
+        making the backgroud color for the entire page as black.
+*/
 body{
     width: 1349px;
+    /*width: 100%*/
     height: auto;
-    background-color: palevioletred;
+    background-color: rgb(71, 66, 66);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 0px;
     margin-right: 0px;
     margin-bottom: 0px;
     margin-left: 0px;
 }
+/*
+    Removing default conditions for all the achnor tags in the Document.
+*/
 a{
     text-decoration: none;
     color: inherit;
 }
+/*
+    Throwing some highlighting details over the important keywords using span tag.
+*/
+span{
+    color: rgb(243 6 6);
+}
 
+/*
+    we are fixing the position of header at the top for the document.
+    we are using row flex properties in the header for the logoname and navigation keys.
+*/
 .container header{
     width: 100%;
     height: 40px;
@@ -41,12 +61,18 @@ a{
     text-indent: 10%;
     padding: 0 0 0 5%;
 }
-
+/*
+    The below css code .header .empty_space provides empty sapce 
+    between the navigation anchor keys and header logo name.
+*/
 .header .empty_space {
     flex: 1 1 0%;
     place-self: stretch;
 }
-
+/*
+    we are using row flex properties in the header for the navigation keys again to display 
+    from the right side of the Document.
+*/
 .container .header .navbars{
     height: inherit;
     display: flex;
@@ -66,32 +92,26 @@ a{
     height: 40px;
     padding: 10px;
 }
-
-.header .About_anchor_key {
+/*
+    Giving padding to all the header anchor keys.
+*/
+.header .anchor_key {
     padding: 0 10px;
 }
-
-.header .Projects_anchor_key {
-    padding: 0 10px;
-}
-
-.header .Skills_anchor_key {
-    padding: 0 10px;
-}
-
-.header .Contact_anchor_key {
-    padding: 0 10px;
-}
-
 
 .container .section{
     width: inherit;
 }
-
+/*
+    Space element to occupy the header space when scrolled to differnt sections.
+*/
 .Spacer{
     height: 60px;
 }
-
+/*
+    Banner has just heading and the Image.
+    using flex for better output. Can use grid as well.
+*/
 .container .sections .banner{
     width: inherit;
     height: 555px;
@@ -113,21 +133,32 @@ a{
     text-indent: 10%;
     padding: 5% ;
 }
+/*
+    resizing the banner image
+*/
 .profile_pic img{
     max-width: 100%;
     height: 450px;
 }
+/*
+    Assiging the fontsize and padding to the banner information.
+*/
 .banner_content .profile_name{
     font-size: 40px;
     padding-top: 15px;
     padding-bottom: 15px;
 }
-
+/*
+    Giving some special detailing to the role.
+*/
 .profile_heading .role{
     color: #2107fd;
 
 }
-
+/*
+    About has my information and job experience.
+    using flex for better output. Can use grid as well.
+*/
 .container .sections .about{
     width: inherit;
     height: 555px;
@@ -142,8 +173,9 @@ a{
     align-items: center;
     padding: 10px;
 }
-
-
+/*
+    Padding for About me Element
+*/
 .about .about_header{
     padding: 10px 10px;
 }
@@ -168,7 +200,9 @@ a{
     flex-basis: 50%;
     padding: 2% ;
 }
-
+/*
+    Adding bottom margin for the Un-order list tags for better look.
+*/
 .about_info li{
     margin-bottom: 15px
 }
@@ -179,37 +213,58 @@ a{
     flex-basis: 50%;
     padding: 2% ;
 }
-
-.about .about_header .about_header_span{
-    color: rgb(243 6 6);
-}
-
-
+/*
+    Project section has the different project cards/blocks I have done.
+*/
 .container .sections .projects{
     width: inherit;
-    height: 1080px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(224, 221, 221);
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    padding: 10px;
+}
+/*
+    Project cards/blocks. Each project act as element in the grid of size 3 in a row.
+*/
+.projects .projectsBlocks{
+    width: 100%;
+    height: 600px;
     display: grid;
     grid-template-columns: repeat(3,350px);
     row-gap: 5%;
     grid-template-rows: auto;
-    flex-direction: column;
     background-color: rgb(224, 221, 221);
     font-size: 16px;
     font-weight: lighter;
     color: black;
-    /* box-sizing: border-box; */
+    box-sizing: border-box; 
     justify-content: space-between;
     align-content: center;
     align-items: center;
     padding: 0% 5%;
 }
-
-.projects .projectName{
+/*
+    Each projects card has four things.
+    1. project image
+    2. project name.
+    3. project details.
+    4. Tech stacks used in the project. 
+*/
+.projectsBlocks .projectName{
     text-align: center;
     font-size: 18px;
 }
-
-.projects div{
+/*
+    Specifing the same css properties for all the project blocks/cards.
+*/
+.projectsBlocks div{
     width: 350px;
     height: 450px;
     background-color: rgb(255, 255, 255);
@@ -217,22 +272,18 @@ a{
     box-sizing: border-box;
     padding: 5%;
 }
-
-.projects span{
-    color: rgb(243 6 6);
-}
-
-
-.projects  img{ 
+/*
+   Giving 50% space the project image in the project block.
+*/
+.projectsBlocks  img{ 
     width: 100%;
     height: 50%;
     border-radius: 5%;
 }
 
-span{
-    color: rgb(243 6 6);
-}
-
+/*
+   Skills section has same grid structure as the projects but with different size.
+*/
 .container .sections .skills{
     width: inherit;
     height: 500px;
@@ -245,13 +296,20 @@ span{
     align-content: center;
     align-items: center;
 }
-
+/*
+   Skills heading
+*/
 .skills .skillsHeading{
     text-align: center;
     font-size: 24px;
     padding: 10px 0px;
 }
-
+/*
+   Skills section has same grid structure as the projects but with different size.
+    Each skill card has two things.
+        1. skill logo
+        2. skill name
+*/
 .container .sections .skills .skillsInformation{
     width: inherit;
     height: 400px;
@@ -259,7 +317,6 @@ span{
     grid-template-columns: repeat(4,150px);
     row-gap: 5%;
     grid-template-rows: auto;
-    flex-direction: column;
     background-color: rgb(255, 255, 255);
     font-size: 16px;
     font-weight: lighter;
@@ -271,8 +328,9 @@ span{
     align-items: center;
     padding: 0% 15%;
 }
-
-
+/*
+    Specifing the same css properties for all the skill blocks/cards.
+*/
 .skillsInformation div{
     width: 150px;
     height: 150px;
@@ -281,15 +339,18 @@ span{
     box-sizing: border-box;
     padding: 2%;
 }
-
-
+/*
+   Giving 50% space the skill logo in the skills block.
+*/
 .skillsInformation img{
     width: 100%;
     height: 50%;
-    border-radius: 5%;
 }
-
-
+/*
+   contact has two sub-parts 
+   1. Contact heading
+   2. Contact Content
+*/
 .container .sections .contact{
     width: inherit;
     height: auto;
@@ -308,7 +369,11 @@ span{
     font-size: 24px;
     padding: 10px 0px;
 }
-
+/*
+    Contact content has two sub-parts
+    1. Image
+    2. content Information
+*/
 .contact .contactContent{
     width: inherit;
     height: 500px;
@@ -316,7 +381,11 @@ span{
     flex-direction: row;
     padding: 2% 20px;
 }
-
+/*
+    Contact Content Information has two sub-parts
+    1. Logo Anchor Keys
+    2. Form
+*/
 .contactContent .contentInformation{
     color: black;
     font-size: 25px;
@@ -327,7 +396,9 @@ span{
     max-width: 100%;
     height: 500px;
 }
-
+/*
+    Css properties for Linkdln, github and mail logos.
+*/
 .contactLogos{
     width: auto;
     height: auto;
@@ -337,16 +408,22 @@ span{
     flex-direction: row;
     justify-content: space-between;
 }
-
+/*
+    Css properties for Linkdln, github and mail logos.
+*/
 .contactLogos img{
     width: 25px;
     height: inherit;
 }
-
+/*
+    Removing default conditions for all the paragraph tags in the Document. To keep logo and text in same line.
+*/
 .contactLogos p{
     display: inline;
 }
-
+/*
+    Specifying differnt properties for Linkdln i.e contact logo 1
+*/
 .contactLogo_1{
     width: 150px;
     background-color: #0e76a8;
@@ -358,7 +435,9 @@ span{
     align-content: center;
     align-items: center;
 }
-
+/*
+    Specifying differnt properties for GitHub i.e contact logo 2
+*/
 .contactLogo_2{
     width: 150px;
     background-color: white;
@@ -371,7 +450,9 @@ span{
     align-content: center;
     align-items: center;
 }
-
+/*
+    Specifying differnt properties for Mail i.e contact logo 3
+*/
 .contactLogo_3{
     width: 150px;
     background-color: white;
@@ -384,7 +465,10 @@ span{
     align-content: center;
     align-items: center;
 }
-
+/*
+    Form to connect with the author of the doucment.
+    It has input tags and a button.
+*/
 .contactForm form{
     display: flex;
     flex-direction: column;
@@ -392,6 +476,9 @@ span{
     align-items: center;
     padding: 15px;
 }
+/*
+    Specifying the same css properting for the input tags in the form.
+*/
 .contactForm form input{
     width: 60%;
     height: 30px;
@@ -403,11 +490,15 @@ span{
     border-radius: 5px;
     border: none;
 }
-
+/*
+    Incresing the Height of the Message in the form explicitly.
+*/
 #contactFormMessage{
     height: 100px;
 }
-
+/*
+    Css properties for the send button.
+*/
 .contactForm form button{
     color: white;
     font-size: 20px;
@@ -420,4 +511,16 @@ span{
     padding-left: 2%;
     border-radius: 5px;
     border: none;
+}
+/*
+    Css properties for the footer.
+*/
+.container footer{
+    width: 100%;
+    height: 30px;
+    background-color: rgb(71, 66, 66);
+    font-size: 20px;
+    font-weight: lighter;
+    color: rgb(190, 182, 182);
+    text-align: center;
 }

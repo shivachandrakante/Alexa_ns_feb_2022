@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html>
+    <!--- Head Tag -->
     <head>
+        <!--- Document Title -->
         <title>Shiva | Portfolio</title>
+        <!--- Linking CSS File -->
         <link rel = "stylesheet" href = "stylesheet.css" />
         <meta name = "author" content = "Shiva Chandra" />
         <meta name = "description" content = "Portfolio of Shiva" />
     </head>
+    <!--- Body Tag -->
     <body>
+        <!--- Container -->
         <div class = "container">
-            <header class = "header">
+            <!--- Header -->
+            <header class = "header" >
                 <div class = "logo_name"><p>Shiva</p></div>
                 <div class = "empty_space"></div>
                 <div class = "navbars">
-                    <div class = "About_anchor_key"><p><a href="#aboutIdToScroll">ABOUT</a></p></div>
-                    <div class = "Projects_anchor_key"><p><a href="#projectIdToScroll">PROJECTS</a></p></div>
-                    <div class = "Skills_anchor_key"><p><a href="#skillsIdToScroll">SKILLS</a></p></div>
-                    <div class = "Contact_anchor_key"><p><a href="#contactIdToScroll">CONTACT</a></p></div>
-                    <div class = "Contact_anchor_key"><p><a href ="https://drive.google.com/file/d/1_BPCjSPcZ9wQ_ka7Q9QSoVMfzUvylVv5/view?usp=sharing" download>RESUME</a></p></div>
+                    <div class = "Header_anchor_key anchor_key"><p><a href="#headerIdToScroll">HOME</a></p></div>
+                    <div class = "About_anchor_key anchor_key"><p><a href="#aboutIdToScroll">ABOUT</a></p></div>
+                    <div class = "Projects_anchor_key anchor_key"><p><a href="#projectIdToScroll">PROJECTS</a></p></div>
+                    <div class = "Skills_anchor_key anchor_key"><p><a href="#skillsIdToScroll">SKILLS</a></p></div>
+                    <div class = "Contact_anchor_key anchor_key"><p><a href="#contactIdToScroll">CONTACT</a></p></div>
+                    <div class = "resume_anchor_key anchor_key"><p><a href ="https://drive.google.com/file/d/1_BPCjSPcZ9wQ_ka7Q9QSoVMfzUvylVv5/view?usp=sharing" download>RESUME</a></p></div>
                 </div>
             </header>
-            <div class="header_space"></div>
+            <!--- Empty space occupier to coopy fixed header space -->
+            <div class="header_space" id="headerIdToScroll"></div>
             <section class = "sections">
                 <section class="banner" >
                     <div class="banner_content">
@@ -31,13 +39,15 @@
                         <img src="profile_pic.jpg" alt="Shiva Image" />
                     </div>
                 </section>
+                <!--- About -->
                 <section class = "about" id="aboutIdToScroll">
+                    <!--- Empty space occupier to coopy fixed header space -->
                     <div class="Spacer"></div>
                     <div class="about_header">
                         <p> All 
-                            <span class="about_header_span">About</span> 
+                            <span>About</span> 
                             Me and My 
-                            <span class="about_header_span">Experience</span>
+                            <span>Experience</span>
                         </p>
                     </div>
                     <div class="about_experience_info_blocks">
@@ -64,36 +74,47 @@
                         </div>
                     </div>
                 </section>
+                <!--- projects -->
                 <section class = "projects" id="projectIdToScroll">
-                    <div class="project_1">
-                        <a href="https://github.com/shivachandrakante/upGrad_Prediction_of_Car_Prices">
-                            <img src="carprices_prediction_project_image.jpg" alt="carprices_prediction"/>
-                            <p class="projectName">Car Prices Prediction</p>
-                            <p class="projectDescription">This assignment is a programming assignment wherein I built a multiple linear regression model for the prediction of car prices</p>
-                            <p><span>Tech Stacks: </span> Python, Pandas, Numpy, Sklearn</p>
-                        </a>
+                    <!--- Empty space occupier to coopy fixed header space -->
+                    <div class="Spacer"></div>
+                    <div class="projects_header">
+                        <p> My 
+                            <span class="about_header_span">Projects</span> 
+                            Section
+                        </p>
                     </div>
-                    <div class="project_2">
-                        <a href="https://github.com/shivachandrakante/gsheet_image_generator">
-                            <img src="gsheetImageGenertorAPI_project_image.png" alt="GsheetimagegeneratorAPI"/>
-                            <p class="projectName">GSheet Image Generator</p>
-                            <p class="projectDescription">An awesome package which helps us in creating a graph from Google Sheets and stores them as an image.</p>
-                            <p><span>Tech Stacks: </span> Python, GsheetAPI, PIP API, Sklearn,Pandas, Numpy, Seaborn</p>
-                        </a>
+                    <div class = "projectsBlocks">
+                        <div class="project_1">
+                            <a href="https://github.com/shivachandrakante/upGrad_Prediction_of_Car_Prices">
+                                <img src="carprices_prediction_project_image.jpg" alt="carprices_prediction"/>
+                                <p class="projectName">Car Prices Prediction</p>
+                                <p class="projectDescription">This assignment is a programming assignment wherein I built a multiple linear regression model for the prediction of car prices</p>
+                                <p><span>Tech Stacks: </span> Python, Pandas, Numpy, Sklearn</p>
+                            </a>
+                        </div>
+                        <div class="project_2">
+                            <a href="https://github.com/shivachandrakante/gsheet_image_generator">
+                                <img src="gsheetImageGenertorAPI_project_image.png" alt="GsheetimagegeneratorAPI"/>
+                                <p class="projectName">GSheet Image Generator</p>
+                                <p class="projectDescription">An awesome package which helps us in creating a graph from Google Sheets and stores them as an image.</p>
+                                <p><span>Tech Stacks: </span> Python, GsheetAPI, PIP API, Sklearn,Pandas, Numpy, Seaborn</p>
+                            </a>
+                        </div>
+                        <div class="project_3">
+                            <a href="https://github.com/shivachandrakante/UpGrad_EDA_Assignment">
+                                <img src="edaAssignment_project_image.jpg" alt="edaAssignment"/>
+                                <p class="projectName">Eda Assignment</p>
+                                <p class="projectDescription">program. In this project, I Performed exploratory
+                                    data analysis on the lending club data set. The goal was to find the factors for the person becoming a defaulter.</p>
+                                <p><span>Tech Stacks: </span> Python, Pandas, Numpy, Seaborn</p>
+                            </a>
+                        </div>
                     </div>
-                    <div class="project_3">
-                        <a href="https://github.com/shivachandrakante/UpGrad_EDA_Assignment">
-                            <img src="edaAssignment_project_image.jpg" alt="edaAssignment"/>
-                            <p class="projectName">Eda Assignment</p>
-                            <p class="projectDescription">program. In this project, I Performed exploratory
-                                data analysis on the lending club data set. The goal was to find the factors for the person becoming a defaulter.</p>
-                            <p><span>Tech Stacks: </span> Python, Pandas, Numpy, Seaborn</p>
-                        </a>
-                    </div>
-                    <div class="project_4">D</div>
-                    <div class="project_5">E</div>
                 </section>
+                <!--- skills -->
                 <section class = "skills" id="skillsIdToScroll">
+                    <!--- Empty space occupier to coopy fixed header space -->
                     <div class="Spacer"></div>
                     <div class="skillsHeading">My <span>Technical</span> Skills</div>
                         <div class="skillsInformation">
@@ -131,7 +152,9 @@
                             </div>
                         </div>
                 </section>
+                <!--- contact -->
                 <section class = "contact" id="contactIdToScroll">
+                    <!--- Empty space occupier to coopy fixed header space -->
                     <div class="Spacer"></div>
                     <div class="contactHeading">Grab a <span>Coffee</span> and <span>Ping</span> me, Lets Chat.</div>
                     <div class="contactContent">
@@ -172,6 +195,7 @@
                     </div>
                 </section>
             </section>
+            <!--- footer -->
             <footer class = "footer">
                 <div class = "footer_description"><p>Designed and Built by Shiva Chandra Kante, All rights recieved</p></div>
             </footer>
